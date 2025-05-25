@@ -50,9 +50,8 @@ const HeroSection = () => {
             </Button>
             <Button
               onClick={() => scrollToSection('contact')}
-              variant="outline"
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-earth-800 px-8 py-3 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="bg-white/20 hover:bg-white/30 text-white border-2 border-white/50 px-8 py-3 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               Visit Our Store
             </Button>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -57,15 +58,14 @@ const ContactSection = () => {
                         <Button
                           onClick={() => handleCopyClick(phone)}
                           size="sm"
-                          variant="outline"
-                          className="border-saffron-300 text-saffron-200 hover:bg-saffron-500 hover:text-white"
+                          className="bg-white/20 hover:bg-white/30 text-white border border-white/30"
                         >
                           <Copy className="w-4 h-4" />
                         </Button>
                         <Button
                           onClick={() => handleCallClick(phone)}
                           size="sm"
-                          className="bg-saffron-500 hover:bg-saffron-600 text-white"
+                          className="bg-saffron-500 hover:bg-saffron-600 text-white font-semibold"
                         >
                           Call
                         </Button>
@@ -121,7 +121,7 @@ const ContactSection = () => {
                   </div>
                   <div className="flex items-center text-gray-300">
                     <div className="w-2 h-2 bg-saffron-400 rounded-full mr-3"></div>
-                    Competitive wholesale prices
+                    Competitive prices
                   </div>
                 </div>
               </CardContent>
@@ -170,9 +170,8 @@ const ContactSection = () => {
             </Button>
             <Button
               onClick={() => window.open('https://maps.google.com/?q=BAHAR+ALZAFARAN+GRINDING+SHOP', '_blank')}
-              variant="outline"
               size="lg"
-              className="border-2 border-saffron-300 text-saffron-200 hover:bg-saffron-500 hover:text-white px-8 py-3 text-lg font-semibold rounded-full"
+              className="bg-white/20 hover:bg-white/30 text-white border-2 border-white/30 px-8 py-3 text-lg font-semibold rounded-full"
             >
               <MapPin className="w-5 h-5 mr-2" />
               Get Directions

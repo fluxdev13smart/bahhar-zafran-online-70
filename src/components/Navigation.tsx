@@ -50,12 +50,6 @@ const Navigation = () => {
                 Products
               </button>
               <button
-                onClick={() => scrollToSection('gallery')}
-                className="text-earth-700 hover:text-saffron-600 px-3 py-2 text-sm font-medium transition-colors"
-              >
-                Gallery
-              </button>
-              <button
                 onClick={() => scrollToSection('services')}
                 className="text-earth-700 hover:text-saffron-600 px-3 py-2 text-sm font-medium transition-colors"
               >
@@ -117,12 +111,6 @@ const Navigation = () => {
                 className="block w-full text-left px-3 py-2 text-base font-medium text-earth-700 hover:text-saffron-600"
               >
                 Products
-              </button>
-              <button
-                onClick={() => scrollToSection('gallery')}
-                className="block w-full text-left px-3 py-2 text-base font-medium text-earth-700 hover:text-saffron-600"
-              >
-                Gallery
               </button>
               <button
                 onClick={() => scrollToSection('services')}
