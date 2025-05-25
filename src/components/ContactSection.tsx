@@ -1,10 +1,12 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Phone, MapPin } from 'lucide-react';
+import { Phone, MapPin, Copy } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
+  const { toast } = useToast();
+  
   const phoneNumbers = [
     '+971 4 285 7715',
     '+971 55 4747065',
@@ -13,6 +15,14 @@ const ContactSection = () => {
 
   const handleCallClick = (phoneNumber: string) => {
     window.open(`tel:${phoneNumber}`, '_self');
+  };
+
+  const handleCopyClick = (phoneNumber: string) => {
+    navigator.clipboard.writeText(phoneNumber);
+    toast({
+      title: "Phone number copied!",
+      description: `${phoneNumber} has been copied to your clipboard.`,
+    });
   };
 
   return (
@@ -43,13 +53,23 @@ const ContactSection = () => {
                   {phoneNumbers.map((phone, index) => (
                     <div key={index} className="flex items-center justify-between">
                       <span className="text-lg text-gray-300">{phone}</span>
-                      <Button
-                        onClick={() => handleCallClick(phone)}
-                        size="sm"
-                        className="bg-saffron-500 hover:bg-saffron-600 text-white"
-                      >
-                        Call
-                      </Button>
+                      <div className="flex gap-2">
+                        <Button
+                          onClick={() => handleCopyClick(phone)}
+                          size="sm"
+                          variant="outline"
+                          className="border-saffron-300 text-saffron-200 hover:bg-saffron-500 hover:text-white"
+                        >
+                          <Copy className="w-4 h-4" />
+                        </Button>
+                        <Button
+                          onClick={() => handleCallClick(phone)}
+                          size="sm"
+                          className="bg-saffron-500 hover:bg-saffron-600 text-white"
+                        >
+                          Call
+                        </Button>
+                      </div>
                     </div>
                   ))}
                 </div>
