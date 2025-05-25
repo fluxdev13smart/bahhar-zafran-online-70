@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -33,7 +32,7 @@ const ContactSection = () => {
           <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-4">
             Contact Us
           </h2>
-          <div className="text-2xl font-amiri text-saffron-200 mb-6 arabic-text">
+          <div className="text-2xl font-noto-kufi text-saffron-200 mb-6 arabic-text">
             اتصل بنا
           </div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -58,14 +57,14 @@ const ContactSection = () => {
                         <Button
                           onClick={() => handleCopyClick(phone)}
                           size="sm"
-                          className="bg-white/20 hover:bg-white/30 text-white border border-white/30"
+                          className="bg-earth-600 hover:bg-earth-700 text-white border border-earth-500 shadow-md"
                         >
                           <Copy className="w-4 h-4" />
                         </Button>
                         <Button
                           onClick={() => handleCallClick(phone)}
                           size="sm"
-                          className="bg-saffron-500 hover:bg-saffron-600 text-white font-semibold"
+                          className="bg-saffron-600 hover:bg-saffron-700 text-white font-semibold shadow-md"
                         >
                           Call
                         </Button>
@@ -93,8 +92,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold text-saffron-200 mb-2">Business Hours:</h4>
                     <div className="text-gray-300 space-y-1">
-                      <p>Saturday - Thursday: 8:00 AM - 10:00 PM</p>
-                      <p>Friday: 2:00 PM - 10:00 PM</p>
+                      <p>Daily: 6:00 AM - 11:30 PM</p>
                     </div>
                   </div>
                 </div>
@@ -128,7 +126,6 @@ const ContactSection = () => {
             </Card>
           </div>
 
-          {/* Map */}
           <div className="lg:sticky lg:top-8">
             <Card className="overflow-hidden bg-white/10 backdrop-blur border-saffron-300/30">
               <CardContent className="p-0">
@@ -150,7 +147,6 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* Bottom CTA */}
         <div className="text-center bg-white/10 backdrop-blur rounded-2xl p-8 border border-saffron-300/30">
           <h3 className="text-3xl font-playfair font-bold mb-4 text-saffron-200">
             Ready to Experience Authentic Spices?
@@ -163,7 +159,7 @@ const ContactSection = () => {
             <Button
               onClick={() => handleCallClick(phoneNumbers[0])}
               size="lg"
-              className="bg-saffron-500 hover:bg-saffron-600 text-white px-8 py-3 text-lg font-semibold rounded-full"
+              className="bg-saffron-600 hover:bg-saffron-700 text-white px-8 py-3 text-lg font-semibold rounded-full shadow-lg"
             >
               <Phone className="w-5 h-5 mr-2" />
               Call Now
@@ -171,7 +167,7 @@ const ContactSection = () => {
             <Button
               onClick={() => window.open('https://maps.google.com/?q=BAHAR+ALZAFARAN+GRINDING+SHOP', '_blank')}
               size="lg"
-              className="bg-white/20 hover:bg-white/30 text-white border-2 border-white/30 px-8 py-3 text-lg font-semibold rounded-full"
+              className="bg-earth-600 hover:bg-earth-700 text-white border-2 border-earth-500 px-8 py-3 text-lg font-semibold rounded-full shadow-lg"
             >
               <MapPin className="w-5 h-5 mr-2" />
               Get Directions

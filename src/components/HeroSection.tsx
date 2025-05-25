@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")'
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://lh3.googleusercontent.com/gps-cs-s/AC9h4npFB5NazbDqkbdqklZDUqQTagvyPwJBxIgeepT6qFQUQ1A0HQBj2oU5Uee708GOOiHKT7cf6DSaP-UUL5rdyJZVcx6CtFfB2ErvOTxlxv1XpGtYSMfgUZPcZMqt24VWBuOwQqid=s1360-w1360-h1020-rw")'
         }}
       />
       
@@ -31,7 +31,7 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 text-shadow-lg">
             Bahhar Al Zafran
           </h1>
-          <div className="text-2xl md:text-4xl font-amiri mb-8 text-saffron-200 arabic-text">
+          <div className="text-2xl md:text-4xl font-noto-kufi mb-8 text-saffron-200 arabic-text">
             مطحنة و اعشاب بحرالزعفران ش.ذ.م.م
           </div>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
@@ -44,14 +44,14 @@ const HeroSection = () => {
             <Button
               onClick={() => scrollToSection('products')}
               size="lg"
-              className="bg-saffron-500 hover:bg-saffron-600 text-white px-8 py-3 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="bg-saffron-600 hover:bg-saffron-700 text-white px-8 py-3 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               Explore Our Products
             </Button>
             <Button
               onClick={() => scrollToSection('contact')}
               size="lg"
-              className="bg-white/20 hover:bg-white/30 text-white border-2 border-white/50 px-8 py-3 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="bg-earth-600 hover:bg-earth-700 text-white border-2 border-earth-500 px-8 py-3 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               Visit Our Store
             </Button>

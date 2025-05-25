@@ -96,7 +96,7 @@
   }
 
   .arabic-text {
-    @apply font-amiri;
+    @apply font-noto-kufi;
     direction: rtl;
     text-align: right;
   }
