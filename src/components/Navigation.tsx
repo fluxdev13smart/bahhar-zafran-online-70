@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
@@ -13,8 +14,73 @@ const Navigation = () => {
     setIsMenuOpen(false);
   };
 
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-saffron-200 shadow-lg">
+      <style jsx>{`
+        #menu-checkbox {
+          display: none;
+        }
+
+        .toggle {
+          position: relative;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          transition-duration: .5s;
+        }
+
+        .bars {
+          width: 100%;
+          height: 4px;
+          background-color: #a16207;
+          border-radius: 4px;
+        }
+
+        #bar2 {
+          transition-duration: .8s;
+        }
+
+        #bar1, #bar3 {
+          width: 70%;
+        }
+
+        #menu-checkbox:checked + .toggle .bars {
+          position: absolute;
+          transition-duration: .5s;
+        }
+
+        #menu-checkbox:checked + .toggle #bar2 {
+          transform: scaleX(0);
+          transition-duration: .5s;
+        }
+
+        #menu-checkbox:checked + .toggle #bar1 {
+          width: 100%;
+          transform: rotate(45deg);
+          transition-duration: .5s;
+        }
+
+        #menu-checkbox:checked + .toggle #bar3 {
+          width: 100%;
+          transform: rotate(-45deg);
+          transition-duration: .5s;
+        }
+
+        #menu-checkbox:checked + .toggle {
+          transition-duration: .5s;
+          transform: rotate(180deg);
+        }
+      `}</style>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -76,16 +142,17 @@ const Navigation = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-earth-700 hover:text-saffron-600 p-2"
-            >
-              <div className="w-6 h-6 flex flex-col justify-center space-y-1">
-                <span className={`block w-6 h-0.5 bg-current transition-transform ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-                <span className={`block w-6 h-0.5 bg-current transition-opacity ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-                <span className={`block w-6 h-0.5 bg-current transition-transform ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
-              </div>
-            </button>
+            <input 
+              type="checkbox" 
+              id="menu-checkbox" 
+              checked={isMenuOpen}
+              onChange={handleMenuToggle}
+            />
+            <label htmlFor="menu-checkbox" className="toggle">
+              <div className="bars" id="bar1"></div>
+              <div className="bars" id="bar2"></div>
+              <div className="bars" id="bar3"></div>
+            </label>
           </div>
         </div>
 
