@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -31,7 +32,7 @@ const AboutSection = () => {
               Our Heritage
             </h3>
             <p className="text-lg text-earth-700 leading-relaxed">
-              For generations, Bahhar Al Zafran has been synonymous with quality and authenticity in Dubai's spice trade. 
+              For generations, Bahar Al Zafran has been synonymous with quality and authenticity in Dubai's spice trade. 
               Our traditional supermarket and grinding mill has served countless families, bringing them the finest saffron, 
               herbs, and spices from around the world.
             </p>

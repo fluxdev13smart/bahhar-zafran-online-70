@@ -29,7 +29,7 @@ const ServicesSection = () => {
       title: 'Custom Blending',
       arabicTitle: 'خلط مخصص',
       description: 'Create your own signature spice blends with our custom mixing services.',
-      features: ['Recipe Development', 'Precise Measurements', 'Consistent Quality', 'Private Labels'],
+      features: ['Recipe Development', 'Precise Measurements', 'Consistent Quality'],
       icon: '⚖️'
     }
   ];

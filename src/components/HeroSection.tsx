@@ -29,7 +29,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 text-shadow-lg">
-            Bahhar Al Zafran
+            Bahar Al Zafran
           </h1>
           <div className="text-2xl md:text-4xl font-noto-kufi mb-8 text-saffron-200 arabic-text">
             مطحنة و اعشاب بحرالزعفران ش.ذ.م.م

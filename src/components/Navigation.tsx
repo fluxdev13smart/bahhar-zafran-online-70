@@ -21,7 +21,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-playfair font-bold">
-              <span className="gradient-text">Bahhar Al Zafran</span>
+              <span className="gradient-text">Bahar Al Zafran</span>
             </h1>
             <p className="text-xs text-saffron-700 arabic-text mt-1">
               مطحنة و اعشاب بحرالزعفران
