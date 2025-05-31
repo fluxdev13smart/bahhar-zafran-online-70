@@ -1,7 +1,7 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
+import Logo from '@/components/Logo';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,12 +20,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-playfair font-bold">
-              <span className="gradient-text">Bahar Al Zafran</span>
-            </h1>
-            <p className="text-xs text-saffron-700 arabic-text mt-1">
-              مطحنة و اعشاب بحرالزعفران
-            </p>
+            <Logo size="md" />
           </div>
 
           {/* Desktop Menu */}
