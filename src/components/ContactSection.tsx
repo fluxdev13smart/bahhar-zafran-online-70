@@ -86,6 +86,9 @@ const ContactSection = () => {
                     <h4 className="font-semibold text-saffron-200 mb-2">Address:</h4>
                     <p className="text-gray-300">
                       BAHAR ALZAFARAN GRINDING SHOP<br />
+                      Nad Rashid Market, Al Rashidiya<br />
+                      Near 29A Street & 26th Street intersection<br />
+                      Close to Rashidiya Police Station<br />
                       Dubai, United Arab Emirates
                     </p>
                   </div>
